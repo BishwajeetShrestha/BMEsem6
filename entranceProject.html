@@ -1,0 +1,877 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+
+<head>
+
+<title>Mathedemo</title>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['(',')']]}});
+</script>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<!--
+// get list of radio buttons with name 'size'
+var sz = document.forms['demoForm'].elements['size'];
+// loop through list
+var totalMarks = 0;
+for (var i=0, len=sz.length; i<len; i++) {
+sz[i].onclick = function() { // assign onclick handler function to each
+// put clicked radio button's value in total field
+this.form.elements.total.value = this.value;
+totalMarks +=  parseInt(this.form.elements.total.value);
+};
+}
+function submit(){
+alert ("Your have secured " + totalMarks + " marks.");
+}
+//-->
+</script>
+</head>
+
+<body>
+<form action="#" method="post" class="demoForm" id="demoForm">
+    <!--<fieldset>
+        <legend>Demo: Get Value Onclick</legend>
+    -->
+<h3>Group A (60 x 1 = 60)</h3>
+
+<p>1. The position x of a particle varies with time (t) as $x = at^2 - bt^3$. The acceleration of particle will be zero at a time.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{2a}{3b}$</label><br/>
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{a}{b}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{a}{3b}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $0$</label><br/>
+    </p>
+
+<p>2. A uniform chain of length 2 m is kept on a table such that a length of 60 cm hangs freely from the edge of the table. the total mass of chain is 4 kg then work done on pulling whole chain on table is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 7.2 J</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 3.6 J</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 120 J</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 1200 J</label><br/>
+    </p>
+
+    <!--<p>
+        <label>Total: $ <input type="text" name="total" class="num" value="8" readonly="readonly" /></label>
+    </p>-->
+    <!--</fieldset> -->
+</form>
+    <p><button type="button" name="getVal" onclick="submit();">Submit</button></p>
+
+
+<!-- ======================= -->
+<h3>Group A (60 x 1 = 60)</h3>
+
+<p>1. The position x of a particle varies with time (t) as $x = at^2 - bt^3$. The acceleration of particle will be zero at a time.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{2a}{3b}$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{a}{b}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{a}{3b}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $0$</label><br/>
+    </p>
+
+<p>2. A uniform chain of length 2 m is kept on a table such that a length of 60 cm hangs freely from the edge of the table. the total mass of chain is 4 kg then work done on pulling whole chain on table is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 7.2 J</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 3.6 J</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 120 J</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 1200 J</label><br/>
+    </p>
+
+<p>3. The equation of wave traveling in a string can be written as $y = 3 \cos \pi(100t - x)$. The wavelength wave is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 100 cm</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2 cm</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 5 cm</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\pi$ cm\</label><br/>
+    </p>
+
+<p>4. Two rods of different material of linear expansivities $\alpha_1$ and $\alpha_2$, Young's modulus $Y_1$ and $Y_2$ are fixed between two rigid massive wall. The rods are heated to same temperature and there is no bending on rod then stress will be equal if</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{Y_1}{Y_2}  = \dfrac{alpha_1}{alpha_2}$ </label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{Y_1}{Y_2}  = \dfrac{alpha_2}{alpha_1}$ </label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{Y_1}{Y_2}  = \sqrt{\dfrac{alpha_1}{alpha_2}}$ </label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{Y_1}{Y_2}  = \sqrt{\dfrac{alpha_2}{alpha_1}}$ </label><br/>
+    </p>
+
+<p>5. An electrical refrigerator abstracts 2000 calories heat from ice trays. The coefficient of performances is 4 then work done by motor in calories is </p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 8000</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2000</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 4000</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 500</label><br/>
+    </p>
+
+<p>6. When $1000$ drops of mercury of potential in each coalesce to form a single drop then potential of single drop will be</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{1}{1000}$ mV</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 1000 mV</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 10 mV</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 100 mV</label><br/>
+    </p>
+
+<p>7. A piece of copper is shaped into a conductor of minimum resistance. Its length and diameter should be</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. l, d</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2l, d</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{l}{2}$, 2d</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 2l, $\dfrac{d}{2}$ </label><br/>
+    </p>
+
+<p>8. Air bubble in glass slab of $\mu$= 1.5 is found 6 cm from one side and 4 cm from other side. the thickness of slab is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 10 cm </label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 6.67 cm</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 15 cm</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 20 cm</label><br/>
+    </p>
+
+<p>9. The K.E. of a free electron is doubled, its de Broglie wavelength will be</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{1}{2}$ </label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{1}{\sqrt{2}}$ </label><br/>
+<label><input type="radio" name="size" value="1"/>d. 3</label><br/>
+    </p>
+
+<p>10. A transistor is connected in common emitter configuration. The collector supply is 8 V and voltage drop across resistor of 800 $\Omega$ in the collector is 0.5 V. The current gain is 0.96 then base current is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 24 $\mu$A</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 25 $\mu$A</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 26 $\mu$A</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 27 $\mu$A</label><br/>
+    </p>
+
+<p>11. The system of homogenous equations 2 x - y + z = 0, x-2y+z =0 and $\lambda$x - y + 2z = 0 has non-trivial solutions, for</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\lambda$= 0</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\lambda$= 5</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\lambda$ = - 5</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\lambda \epsilon$ R</label><br/>
+    </p>
+
+<p>12. The area of the triangle formed by the line 2 x - 3 y + 6 = 0 with the coordinate axes is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 2</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 3</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 6</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 12</label><br/>
+    </p>
+
+<p>13. The equation xy - 4x - 3y + 13 = 0 represents</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. a pair of lines at right angles</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. a rectangular hyperbola</label><br/>
+<label><input type="radio" name="size" value="1"/>c. a pair of parallel lines</label><br/>
+<label><input type="radio" name="size" value="1"/>d. a parabola</label><br/>
+    </p>
+
+<p>14. If $y = 1 + \dfrac{1}{x} + \dfrac{1}{x^2}$ + ... to $\infty$ and $\mid x \mid$ > 1$, then $\dfrac{dy}{dx}$=</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. - $\dfrac{1}{(1-x)^2}$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{1}{(1-x)^2}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $x - \dfrac{1}{x}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{y}{x}$</label><br/>
+    </p>
+
+<p>15. The equation p $\cos x$ + q $\sin x$ = r has a solution if</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $r \ max {p, 1}$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $r \epsilon [- \sqrt{p^2 + q^2}$ ‚ $\sqrt{p^2 + q^2}]$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $r^2 = p^2 + q^2$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\mid r \mid > \sqrt{p^2 + q^2}$ </label><br/>
+    </p>
+
+<p>16. $f : R \to R$ given by $f(x) = x^2 - 4x + 4$</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. an odd function</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. an even function</label><br/>
+<label><input type="radio" name="size" value="1"/>c. one-to-one</label><br/>
+<label><input type="radio" name="size" value="1"/>d. many-to-one</label><br/>
+    </p>
+
+<p>17. The locus of the point which is equidistant form the points (1, -1, 3) and (1, -1, -5) is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. x + y + z = 3</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. x + y + z = - 1</label><br/>
+<label><input type="radio" name="size" value="1"/>c. z = 1</label><br/>
+<label><input type="radio" name="size" value="1"/>d. z = 0</label><br/>
+    </p>
+
+<p>18. $ \int \dfrac{x dx}{x^4 +1}$=</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $ \tan^{-1} x^2$ + C</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $ \dfrac{1}{2}\tan^{-1} x^2$ + C</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\ln (1+x^4)$ + C</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $ \dfrac{1}{2}\ln (1+x^4)$ + C</label><br/>
+    </p>
+
+<p>19. A function f(x) is continuous at $x_0$, then which one of following may be false.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Right hand limit of function is equal to left hand limit</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. The limit value is equal to the functional value at x=$x_0$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. The function is differentiable at $x=x_0$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. All are true</label><br/>
+    </p>
+
+<p>20. The eccentricity of conic section $x^2 -y^2 =1$ is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\sqrt{2}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 2</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{1}{\sqrt{2}}$</label><br/>
+    </p>
+
+<p>21. The oxidation state of N in given compound NH$_4$NO$_3$ is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. -3, + 1</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. +1</label><br/>
+<label><input type="radio" name="size" value="1"/>c. -3, + 5</label><br/>
+<label><input type="radio" name="size" value="1"/>d. -3, + 3</label><br/>
+    </p>
+
+<p>22. The no. of electrons present in 1 mole of CH$_4$</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1 $N_A$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2 $N_A$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 5 $N_A$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 10 $N_A$</label><br/>
+    </p>
+
+<p>23. The equivalent weight of metal is 25. The vapour density of its chloride in 91. The formula of the metal chloride is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. MCl</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. MCl$_2$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. MCl$_3$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. MCl$_4$</label><br/>
+    </p>
+
+<p>24. The electronic configuration of element ends at an antepenultimate shell is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. s-block</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. p-block</label><br/>
+<label><input type="radio" name="size" value="1"/>c. d-block</label><br/>
+<label><input type="radio" name="size" value="1"/>d. f-block</label><br/>
+    </p>
+
+<p>25. The total no. of orbitals present in each sub-shell is equivalent to the relation</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 2n$^2$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. n$^2$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 2(2l + 1)</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 2l + 1</label><br/>
+    </p>
+
+<p>26. Which compound is not Bronsted-Lowry base?</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. HNO$_3$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. H$_2$O</label><br/>
+<label><input type="radio" name="size" value="1"/>c. NaOH</label><br/>
+<label><input type="radio" name="size" value="1"/>d. CN$^–$</label><br/>
+    </p>
+
+<p>27. The maximum covalent character is found in</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. HF</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. HCl</label><br/>
+<label><input type="radio" name="size" value="1"/>c. HBr</label><br/>
+<label><input type="radio" name="size" value="1"/>d. HI</label><br/>
+    </p>
+
+<p>28. Which of the following alkali metals is used in photo electric cell?</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Li</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Na</label><br/>
+<label><input type="radio" name="size" value="1"/>c. Cs</label><br/>
+<label><input type="radio" name="size" value="1"/>d. Fr</label><br/>
+    </p>
+
+<p>29. Spelter is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. impure Cu</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. impure Zn</label><br/>
+<label><input type="radio" name="size" value="1"/>c. ZnO</label><br/>
+<label><input type="radio" name="size" value="1"/>d. CuO</label><br/>
+    </p>
+
+<p>30. Which of this is an non-ferrous alloy?</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. steel</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. invar</label><br/>
+<label><input type="radio" name="size" value="1"/>c. solder</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none of this</label><br/>
+    </p>
+
+<p>31. Kerosene is the mixture of</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. aromatic compound</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. alkanes</label><br/>
+<label><input type="radio" name="size" value="1"/>c. aliphatic acids</label><br/>
+<label><input type="radio" name="size" value="1"/>d. alcohols</label><br/>
+    </p>
+
+<p>32. The IUPAC name of t-butyl alcohol is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Butanol-1</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Butanol-2</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 2-methyl propanol-1</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 2-methyl prpoanol-2</label><br/>
+    </p>
+
+<p>33. The phonemic transcription of the word  'hardly' is ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. /had$\omega$:/</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. /hardl$\omega$:/</label><br/>
+<label><input type="radio" name="size" value="1"/>c. /hædl$\omega$/</label><br/>
+<label><input type="radio" name="size" value="1"/>d. /hdl$\omega$/</label><br/>
+    </p>
+
+<p>34. The word - 'hardship' has its primary stress on the ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1st</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2nd</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3rd</label><br/>
+<label><input type="radio" name="size" value="1"/>d. all of these</label><br/>
+    </p>
+
+<p>35. At a lecture:</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. spectators</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. audience</label><br/>
+<label><input type="radio" name="size" value="1"/>c. mob</label><br/>
+<label><input type="radio" name="size" value="1"/>d. viewers</label><br/>
+    </p>
+
+<p>36. To send out of one's country:</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. emigrant</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. immigrant</label><br/>
+<label><input type="radio" name="size" value="1"/>c. expatriate</label><br/>
+<label><input type="radio" name="size" value="1"/>d. pirate</label><br/>
+    </p>
+
+<p>37. Introduce a person ... someone.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. with</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. to</label><br/>
+<label><input type="radio" name="size" value="1"/>c. from</label><br/>
+<label><input type="radio" name="size" value="1"/>d. for</label><br/>
+    </p>
+
+<p>38. Look ... someone as a friend.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. at</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. for</label><br/>
+<label><input type="radio" name="size" value="1"/>c. into</label><br/>
+<label><input type="radio" name="size" value="1"/>d. upon</label><br/>
+    </p>
+
+<p>39. The number of persons present ... very small.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. are</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. were</label><br/>
+<label><input type="radio" name="size" value="1"/>c. is</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none of these</label><br/>
+    </p>
+
+<p>40. Half of them ... rotten.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. are</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. is</label><br/>
+<label><input type="radio" name="size" value="1"/>c. was</label><br/>
+<label><input type="radio" name="size" value="1"/>d. all of these</label><br/>
+    </p>
+
+<p>41. By leaps and bounds</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. very rapidly</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. a search</label><br/>
+<label><input type="radio" name="size" value="1"/>c. to reduce</label><br/>
+<label><input type="radio" name="size" value="1"/>d. to affect</label><br/>
+    </p>
+
+<p>42. All that glitters is not gold ... ?</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. is it</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. doesn't it</label><br/>
+<label><input type="radio" name="size" value="1"/>c. isn't if</label><br/>
+<label><input type="radio" name="size" value="1"/>d. does it</label><br/>
+    </p>
+
+<p>43. These were some people at the Gage ... ?</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. weren't they</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. didn't they</label><br/>
+<label><input type="radio" name="size" value="1"/>c. weren't here</label><br/>
+<label><input type="radio" name="size" value="1"/>d. did they</label><br/>
+    </p>
+
+<p>44. Black as she is, she is a beauty' is a ... sentence.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. simple</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. compound</label><br/>
+<label><input type="radio" name="size" value="1"/>c. complex</label><br/>
+<label><input type="radio" name="size" value="1"/>d. mixed</label><br/>
+    </p>
+
+<p>45. 'She would have come if you had invited her, for she was free' is ... sentence.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. simple</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. compound</label><br/>
+<label><input type="radio" name="size" value="1"/>c. complex</label><br/>
+<label><input type="radio" name="size" value="1"/>d. mixed</label><br/>
+    </p>
+
+<p>46. Her father said, 'if you score above 80$\%$, in IOE entrance exam, you ... be given Galaxy Grand-2'.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. will</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. may</label><br/>
+<label><input type="radio" name="size" value="1"/>c. should</label><br/>
+<label><input type="radio" name="size" value="1"/>d. shall</label><br/>
+    </p>
+
+<p>47. In a 2 stroke engine the working cycle is completed in the no. of revolution of the crank shaft equal to ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 4</label><br/>
+    </p>
+
+<p>48. In a 2 stroke engine the working cycle is completed in the no. of revolution of the crank shaft equal to ....</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Petrol engine</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. diesel engine</label><br/>
+<label><input type="radio" name="size" value="1"/>c. steam engine</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none</label><br/>
+    </p>
+
+<p>49. About .... of global final energy consumption comes from renewals.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 0.04</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 0.08</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 0.12</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 0.16</label><br/>
+    </p>
+
+<p>50. For cement OPC stands for ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Ordinary Pozzolana Cement</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Ordinary Portland Cement</label><br/>
+<label><input type="radio" name="size" value="1"/>c. Overall Portland Cement</label><br/>
+<label><input type="radio" name="size" value="1"/>d. Ordinary Particle Cement</label><br/>
+    </p>
+
+<p>51. The shape of river bed aggregate is ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. rounded</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. irregular</label><br/>
+<label><input type="radio" name="size" value="1"/>c. flat</label><br/>
+<label><input type="radio" name="size" value="1"/>d. flaky</label><br/>
+    </p>
+
+<p>52. In brick masonry the frog of the brick is generally kept is ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. top face</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. bottom face</label><br/>
+<label><input type="radio" name="size" value="1"/>c. exposed face</label><br/>
+<label><input type="radio" name="size" value="1"/>d. interior face</label><br/>
+    </p>
+
+<p>53. Which of the following sign denotes that pedestrian are prohibited form crossing the road except where they have started to cross the road.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Red Standing Man</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Green Walking Man</label><br/>
+<label><input type="radio" name="size" value="1"/>c. Flashing Green Man</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none</label><br/>
+    </p>
+
+<p>54. Two resistance $\rho_1$ and $\rho_2$ give combined resistance of 4.0 ohms when in series and 1 ohm when in parallel. The resistance are</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1.5 and 2.5 ohms</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2 ohms each</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3 and 1 ohm</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 4 ohm and 1 ohm</label><br/>
+    </p>
+
+<p>55. Energy resources derived from natural organic materials are called ....</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. geothermal energy sources</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. fossil fuels</label><br/>
+<label><input type="radio" name="size" value="1"/>c. biomass</label><br/>
+<label><input type="radio" name="size" value="1"/>d. all of these</label><br/>
+    </p>
+
+<p>56. In a transformer, Secondary winding is that</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Which has greater no. of winding</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. which has less no. of winding than another winding</label><br/>
+<label><input type="radio" name="size" value="1"/>c. in which electrical source is applied.</label><br/>
+<label><input type="radio" name="size" value="1"/>d. From which electrical power is taken out.</label><br/>
+    </p>
+
+<p>57. The diesel engines are also known as ... Engine.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. compression ignition</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. spark ignition</label><br/>
+<label><input type="radio" name="size" value="1"/>c. dual ignition</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none</label><br/>
+    </p>
+
+<p>58. Decimal system is also called …</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Hindu counting system</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Christian counting system</label><br/>
+<label><input type="radio" name="size" value="1"/>c. Arabic counting system</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none</label><br/>
+    </p>
+
+<p>59. The current gain of the common emitter transistor amplifier is ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. zero</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. less than 1</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 1</label><br/>
+<label><input type="radio" name="size" value="1"/>d. more than 1</label><br/>
+    </p>
+
+<p>60. Printers are ...</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. input device</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. output device</label><br/>
+<label><input type="radio" name="size" value="1"/>c. both (a) and (b)</label><br/>
+<label><input type="radio" name="size" value="1"/>d. none</label><br/>
+    </p>
+
+<h3>Group B (40 x 2 = 80)</h3>
+
+<p>61. A parachutist drops freely from an aeroplane for 10 seconds before parachute open. After that he descends with retardation of 2.5 ms$^{-2}$. The plane is at 2495 m when person is thrown then velocity of person while reaching on ground is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 5 m/s</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 10 m/s</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 15 m/s</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 20 m/s</label><br/>
+    </p>
+
+<p>62. A shell of mass 2 m fired with speed 'u' at an angle $\theta$ to the horizontal explodes at the highest point of its motion into two fragments of mass 'm' each. If one of the fragment whose initial speed is zero fall vertically, the distance at which other fragment fall from the initial point is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{3}{2} \dfrac{u^2 \sin 2\theta}{g}$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{4}{3} \dfrac{u^2 \sin 2\theta}{g}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{2}{3} \dfrac{u^2 \sin 2\theta}{g}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{5}{2} \dfrac{u^2 \sin 2\theta}{g}$</label><br/>
+    </p>
+
+<p>63. A block of mass 1 kg is at rest on a horizontal table. The coefficient of static friction between  lock and table is 0.5 then force acting at an angle 60$^{\circ}$ with horizontal that will just move the block on table is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 5 N</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 5.36 N</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 7.46 N</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 10 N</label><br/>
+    </p>
+
+<p>64. A ball of mass 'm' moving with velocity u undergoes a head on collision with a ball of mass 'nm' initially at rest. the fraction of incident energy transferred to heavier ball is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{n}{n+1}$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{n}{(n+1)^2}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{2n}{(n+1)^2}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{4n}{(n+1)^2}$</label><br/>
+    </p>
+
+<p>65. The frequency of sound of car horn is perceived by an observes towards when the car is moving differs from the frequency of horn by 2.5$\%$. The velocity of sound is 320 m/s then velocity of car is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 8 m/s</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 80 m/s</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 70 m/s</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 6 m/s</label><br/>
+    </p>
+
+<p>66. Two liters of water in an open lid insulated kettle is heated by an electric heater of power 1 kW. The heat lost from lid at the rate of 160 W. The time in which water is heated from 20$^{\circ}$ C to 75$^{\circ}$ C is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 340 s</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 550 s</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 620 s</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 760 s</label><br/>
+    </p>
+
+<p>67. A body of surface area 10 cm$^2$ is heated to 127$^{\circ}$ C and placed in a room of 27$^{\circ}$ C. The rate of loss of heat from body is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1 W</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2 W</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3 W</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 4 W</label><br/>
+    </p>
+
+<p>68. Four equal charges Q are placed at the four corners of a square of side 'a' each work done in removing a charge 'Q' from its centre to infinity is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 0</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{\sqrt{2} Q^2}{4 \pi \epsilon_0 a}$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{\sqrt{2} Q^2}{\pi \epsilon_0 a}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{Q^2}{2 \pi \epsilon_0 a}$</label><br/>
+    </p>
+
+<p>69. A number of 110 V lamps connected in parallel are fed by a 130 V battery having an internal resistance of 2.6 $\Omega$. If the resistance of each lamp is 200 $\Omega$ and resistance of wire is 0.4 $\Omega$. The number of lamps are</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 5</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 10</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 12</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 15</label><br/>
+    </p>
+
+<p>70. A 2 MeV proton is moving perpendicular to a uniform magnetic field of 2.5 T. The force on proton is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $2.5 \times 10^{-10}$ N	</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $8 \times 10^{-11} $ N</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $2.5 \times 10^{-11} $ N</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $8  \times 10^{-12}$ N</label><br/>
+    </p>
+
+<p>71. The spokes of wheel are metallic and their length is 0.5 m. On rotating the wheel at right angles to a uniform magnetic field of $5 \times 10^{-4}$T, a potential difference of 3.14 mV is produced between the rim and axis. The rate of rotation of wheel is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 8 rotation/s</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 12 rotations/s</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 16 rotations/s</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 20 rotations/s</label><br/>
+    </p>
+
+<p>72. A parallel beam of light of wavelength 6000$^{\circ}$ A is incident normally on a slit of width 0.2 mm. The diffraction pattern n observed on a screen which is placed at the focal place of convex lens of focal length 50 cm lens is close to slit then distance between minima on both sides of central maxima will be</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1 mm</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2 mm</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3 mm</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 4 mm</label><br/>
+    </p>
+
+<p>73. The stopping potential for metal face is 0.5 V for light of wavelength 0.6  $\mu$m. The stopping potential for light of wavelength 0.4 $\mu$m is 1.5 V. The work function of metal is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 0.75 eV</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 1.5 eV</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3 eV</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 3.5 eV</label><br/>
+    </p>
+
+<p>74. The wavelength of series limit of Lyman series for Hydrogen atom is 912$^{\circ}$ A then series limit of Balmer series in hydrogen atom is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 912$^{\circ}$ A	</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 1824$^{\circ}$ A</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 3648$^{\circ}$ A</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 456$^{\circ}$ A</label><br/>
+    </p>
+
+<p>75. A nucleus of mass number 220 undergoes an $\alpha$ decay. the value of energy of reaction is 5.5 MeV. The kinetic energy of $\alpha$ particle is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 5.5 MeV</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 5.4 MeV</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 5.3 MeV	</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 5.1 MeV</label><br/>
+    </p>
+
+<p>76. The coefficient of $\dfrac{x^6}{y^2}$  in the expansion of $(\dfrac{x^2}{y} + \dfrac{y}{x})^{12}$ is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. C(12,6)</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. C(12,5)</label><br/>
+<label><input type="radio" name="size" value="1"/>c. C(12,4)</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 0</label><br/>
+    </p>
+
+<p>77. The lines ax + by = 1 is normal to the circle 2x$^2$+ 2y$^2$- 5x + 6y - 1 =  0 if </p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 5a - 6b = 2</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 6a - 5b = 4	</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 5a - 6b = 4	</label><br/>
+<label><input type="radio" name="size" value="1"/>d. - 5a + 6b = 2</label><br/>
+    </p>
+
+<p>78. $\int \tan^4 x dx$</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{\tan^3x}{3}  + \tan x + x$ + C</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{\tan^3x}{3}$ + C</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{\tan^3x}{3}  - \tan x + x$ + C</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\tan^3x - x - \dfrac{\tan x}{3}$  + C</label><br/>
+    </p>
+
+<p>79. The plane 2x - 3y + 4z + 7=0 is perpendicular to the line with direction ratios:</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 4, - 6, 8</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 1, -2, -2</label><br/>
+<label><input type="radio" name="size" value="1"/>c. -2, 3, 4</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 1, 2, 2</label><br/>
+    </p>
+
+<p>80. If $y = \sqrt{\sin x + \sqrt{\sin x + \sqrt{\sin x + ..} }}$ then $\dfrac{dy}{dx}$ is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $\dfrac{\sin x}{1 - 2y}$ </label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\dfrac{\cos x}{2y + 1}$ </label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{1}{\cos x(2y - 1)}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\dfrac{\cos x}{2y - 1}$</label><br/>
+    </p>
+
+<p>81. In the ellipse $x^2 + 3y^2 = 9$, the distance between the foci is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 6</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 3</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\dfrac{2}{3} \sqrt{6}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 2 $\sqrt{6}$ </label><br/>
+    </p>
+
+<p>82. In any $\Delta$ABC, $a^2 \sin$ 2B + $b^2 \sin$ 2A = </p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 2$\Delta$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $\Delta$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 4$\Delta$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $\Delta^2$</label><br/>
+    </p>
+
+<p>83. $\displaystyle{\int_{0}^{\dfrac{\pi}{4}}} \dfrac{\cos^6 x}{\sin^8 x}  dx$ =</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 1/7</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. -1/7</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 1/6	</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 1/8</label><br/>
+    </p>
+
+<p>84. The quadratic equation whose roots are the AM and HM of the roots of $x^2 - 4x - 6 = 0$ is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. $x^2 + x + 6 = 0$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. $x^2 - x - 6 = 0$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $x^2 - 2x - 6 = 0$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $x^2 + x - 6 = 0$</label><br/>
+    </p>
+
+<p>85. If $ \overrightarrow{a}$, $ \overrightarrow{b}$ and $ \overrightarrow{c}$ are pair wise non-collinear vectors but $ \overrightarrow{a}$ + $ \overrightarrow{b}$ is collinear with $ \overrightarrow{c}$ and $ \overrightarrow{b}$ + $ \overrightarrow{c}$ is collinear with $ \overrightarrow{a}$. Now $ \overrightarrow{a}$ + $ \overrightarrow{b}$ + $ \overrightarrow{c}$ is a</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. unit vector</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. null vector</label><br/>
+<label><input type="radio" name="size" value="1"/>c. proper vector</label><br/>
+<label><input type="radio" name="size" value="1"/>d. equally inclined with $ \overrightarrow{a}$, $ \overrightarrow{b}$ and $ \overrightarrow{c}$</label><br/>
+    </p>
+
+<p>86. The area bounded by the curve $y = \sqrt{4 - x^2}$  and the x-axis is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 4$\pi$</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 2$\pi$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. $\pi$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. $3\pi$</label><br/>
+    </p>
+
+<p>87. $\csc^{-1} (\cos x)$ is real if</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. x $\epsilon$ [-1, 1]</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. x $\epsilon$ R</label><br/>
+<label><input type="radio" name="size" value="1"/>c. x = (2n + 1) $\dfrac{\pi}{2}$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. x = n$\pi$</label><br/>
+    </p>
+
+<p>88. (1 + i)$^3$ + (1 - i)$^6$ = </p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. i</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 1(-1 + 5i)	</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 1 - 5i</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 0</label><br/>
+    </p>
+
+<p>89. In a geometric progression of alternately positive and negative terms, if each term is the arithmetic mean of the next two terms, then the common ratio is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. -1</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. -3</label><br/>
+<label><input type="radio" name="size" value="1"/>c. -2</label><br/>
+<label><input type="radio" name="size" value="1"/>d. - $\dfrac{1}{2}$ </label><br/>
+    </p>
+
+<p>90. The parametric equation of the parabola with focus (0, 1) and directrix x + 2 = 0 is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. x = t$^2$ + 1, y = 2t - 2</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. x = t$^2$ + 1, y = 2t + 1</label><br/>
+<label><input type="radio" name="size" value="1"/>c. x = t$^2$, y = 2t</label><br/>
+<label><input type="radio" name="size" value="1"/>d. x = t$^2$ - 1, y = 2t + 2</label><br/>
+    </p>
+
+<p>91. Which of this forms precipitation with a gas formed by reacting FeS with dilute H$_2$SO$_4$?</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Acidified ZnSO$_4$	</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Acidified MnSO$_4$</label><br/>
+<label><input type="radio" name="size" value="1"/>c. Acidified FeCl$_3$</label><br/>
+<label><input type="radio" name="size" value="1"/>d. Acidified CdSO$_4$</label><br/>
+    </p>
+
+<p>92. The mass of $1.94 \times 10^{18}$ atoms of iron is equal to the mass of 2 cc of H$_2$ at NTP. Find the atomic mass of iron.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 50</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 55</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 60</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 65</label><br/>
+    </p>
+
+<p>93. 100 ml of x M NaH are mixed with 100 ml of 0.1 M H$_2$SO$_4$. So that the pH of the resulting solution is 1.699. Find x.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 0.16</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 0.24</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 0.32</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 0.48</label><br/>
+    </p>
+
+<p>94. What vol. of H$_2$ at NTP will be produced at cathode when an aqueous acid solution is electrolysed by passing 15 ampere of current for 3 hours.</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. 15 lit</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. 17 lit</label><br/>
+<label><input type="radio" name="size" value="1"/>c. 19 lit</label><br/>
+<label><input type="radio" name="size" value="1"/>d. 21 lit</label><br/>
+    </p>
+
+	<p>Read the following passage and give the answer of the question.
+At a time when we are enjoying longer, more healthful lives, ominous headlines announces: ‘Researchers Tie Aluminium to Alsheimer's Disease’ and ‘Coffee linked to Cholesterol Rise’. As a result of alarming and something ambiguous bulletins, worriers often become major threats, and speculations about disease prevention become ‘proven’ curs. Par to the problem is that the media often trumpet questionable research findings as major medical breakthroughs. In 1985, three French scientists told reporters at a press that the drug cyclosporine appeared to halt the growth of the AIDS virus. They asked the announcement on their observation of two AIDS patients treated for eight days. Never mind that no actual study had been done; for the media, the announcement was enough, and the story became front-page news around the world. Unfortunately, one of the patients died within days. Cyclosporine was no miracle. cure.
+</p>
+<p>95. According to the writer, a lot presented day medical research is</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. sound and dependable</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. utterly unconvincing</label><br/>
+<label><input type="radio" name="size" value="1"/>c. of questionable	</label><br/>
+<label><input type="radio" name="size" value="1"/>d. of no value at all</label><br/>
+    </p>
+
+<p>96. The undue publicity given to such research</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. has no impact on people's lives in general</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. adds to people's worries and gives them false hopes</label><br/>
+<label><input type="radio" name="size" value="1"/>c. fills people's lives with death and destruction</label><br/>
+<label><input type="radio" name="size" value="1"/>d. makes people aware of the diseases</label><br/>
+    </p>
+
+<p>97. The role of the media has been</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. to make people aware of possible health hazards</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. to give publicity to questionable research findings</label><br/>
+<label><input type="radio" name="size" value="1"/>c. to dispel people's fears about unknown diseases.</label><br/>
+<label><input type="radio" name="size" value="1"/>d. to report major medical discoveries</label><br/>
+    </p>
+
+<p>98. According to some of the research findings, coffee is responsible for the rise in</p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. Cyhclospoirne</label><br/>          
+<label><input type="radio" name="size" value="1"/>b. Alzheimer's diseases</label><br/>
+<label><input type="radio" name="size" value="1"/>c. DIDS</label><br/>
+<label><input type="radio" name="size" value="1"/>d. Cholesterol level</label><br/>
+    </p>
+
+<p>99. </p>
+    <p>
+<label><input type="radio" name="size" value="1"/>a. </label><br/>          
+<label><input type="radio" name="size" value="1"/>b. </label><br/>
+<label><input type="radio" name="size" value="1"/>c. </label><br/>
+<label><input type="radio" name="size" value="1"/>d. </label><br/>
+    </p>
+
+
+
+
+    <p><button type="button" name="getVal" onclick="submit();">Submit</button></p>
+    <!--
+    </fieldset>
+</form>
+-->
+ 
+<!--
+<input type="button" value="Submit" onclick="submit();" />
+-->
+
+</body>
+</html>
